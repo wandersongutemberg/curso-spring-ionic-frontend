@@ -12,7 +12,6 @@ export class CategoriaService {
     }
 
     findAll() : Observable<CategoriaDTO[]> {
-        return this.http.get<CategoriaDTO[]>(`${API_CONFIG.baseUrl}/php-banco/categorias/`);
-        //return this.http.get<CategoriaDTO[]>("http://localhost/CursoSpringIonic/php-banco/categorias/");
+        return this.http.get<CategoriaDTO[]>(`${API_CONFIG.baseUrl}/categorias/`);
     }
 }
